@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>converter</title>
+</head>
+<body>
+<section>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+    <form th:action="@{/processForm}" th:object="${singl}" method="post">
+        <div class="form-group">
+    <label>From</label>
+       <select th:name="from">
+           <option
+                th:each="item : ${res.FromCurrency}"
+                th:value="${item}"
+                th:text="${item}">
+           </option>
+        </select>
+        </div>
+        <div class="form-group">
+    <label>To</label>
+    <select th:name="to">
+        <option
+                th:each="item : ${res.ToCurrency}"
+                th:value="${item}"
+                th:text="${item}">
+        </option>
+    </select>
+        </div>
+        <div class="form-group">
+        <label >Amount:</label>
+        <input type="text"
+               id="amount"
+               name="amount"
+               placeholder="Enter amount to convert" />
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

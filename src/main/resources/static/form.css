@@ -1,0 +1,51 @@
+.navbar {
+    background-color: #F44336; /* replace with your desired color code */
+    color: #fff; /* set text color to white for contrast */
+    padding: 10px; /* add some padding to the navbar */
+}
+
+.container {
+    margin-top: 50px; /* Add some margin at the top for spacing */
+}
+
+/* Center the form horizontally */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Add a max-width to the form and center it vertically */
+.col-md-6 {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Center the form elements vertically */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ul {
+    list-style-type: square; /* set the bullet point type */
+}
+.bold-text-centered-italic{
+    font-weight: bold; /* make the text bold */
+    text-decoration: underline; /* add an underline to the text */
+    text-align: center; /* center the text */
+    font-style: italic;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
